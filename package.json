@@ -1,0 +1,23 @@
+{
+  "name": "mern_shopping_list",
+  "version": "1.0.0",
+  "description": "Shopping list built using mern stack",
+  "main": "script.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "author": "Priyadarshan Nawal",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.6.0",
+    "concurrently": "^6.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.1",
+    "nodemon": "^2.0.7"
+  }
+}
